@@ -190,7 +190,7 @@ ul{
 .block__link{
     width: 70%;
 }
-.text{
+.text, .block__link p{
     padding-left: 30px;
 }
 .block__info{
@@ -211,4 +211,17 @@ ul{
     width: 80%;
     height: 400px;
     background-color: red;
+}
+
+@media (max-width: 576px) {
+.box__project{width: 100%;}   
+.block__image{width: 100%;} 
+.block {display: block;}
+.block__link{
+    width: 100%;
+    text-align: center;
+}
+}
+@media (min-width: 576px) and (max-width: 992px){
+.box__project{width: 50%;}
 }
