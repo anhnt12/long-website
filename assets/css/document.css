@@ -64,14 +64,7 @@ ul{
     bottom: 10px;
 }
 
-.block {
-    width: 100%;
-    padding: 15px;
-    box-sizing: border-box;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-}
+
 .title__child{
     position: relative;
 }
@@ -183,6 +176,14 @@ ul{
     overflow: hidden;
     margin: 0 auto;
 }
+.block {
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
 
 .block__image{
     width: 30%;
@@ -211,6 +212,73 @@ ul{
     width: 80%;
     height: 400px;
     background-color: red;
+}
+
+
+.form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+form{
+    width: 30%;
+    padding: 10px;
+    border: 5px solid #333;
+}
+
+.information{
+    /* width: 35%; */
+    display: flex;
+    padding-bottom: 10px;
+}
+#name, #phone{
+    border-radius: 8px;
+}
+
+.information__firt{
+    width: 50%;
+}
+.information__firt input{
+    height: 20px;
+}
+.information__second{
+    width: 50%;
+}
+.topic, .note{
+    padding-bottom: 10px;
+}
+.note textarea{
+    width: 100%;
+    border-radius: 10px;
+}
+button{
+    width: 100px;
+    height: 30px;
+    background-color: #0c88a2;
+    color: white;
+    border-radius: 20px;
+}
+.button{
+    text-align: end;
+}
+.button :hover{
+    background-color: rgb(0, 98, 255);
+}
+.table{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
+}
+table{
+    width: 70%;
+    align-content: center;
+    border-collapse: collapse;
+}
+tr, th, td{
+    border: 1px solid #333;
+
 }
 
 @media (max-width: 576px) {

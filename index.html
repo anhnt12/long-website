@@ -35,6 +35,81 @@
             </li>
         </ul>
     </div>
+     <div class="form">
+        <form action="">
+            <div class="information">
+                <div class="information__firt"><input type="text" name="name" id="name" placeholder="   Họ và tên"></div>
+                <div class="information__firt"><input type="tel" name="phone" id="phone" placeholder="   số điện thoại"></div>
+            </div>
+            
+            <div class="information">
+                <div class="information__second">
+                <select name="gender" id="gender">
+                    <option value="">Giới tính</option>
+                    <option value="">Nam</option>
+                    <option value="">Nữ</option>
+                    <option value="">Khác</option>
+                </select>
+                </div>
+                <div class="information__second"><input type="date" name="date" id="date" placeholder="Năm sinh"></div>
+            </div>
+            
+            <div class="topic"> 
+                <p>Chủ đề quan tâm</p>
+                <input type="checkbox" name="topic" id="topic">
+                <label for="topic">Lập trình</label>
+                <input type="checkbox" name="topic" id="topic">
+                <label for="topic">Công nghệ</label>
+                <input type="checkbox" name="topic" id="topic">
+                <label for="topic">Đời sống</label>
+            </div>
+            <div class="note">
+                <textarea name="note" id="note" cols="30" rows="10" placeholder="   Ghi chú"></textarea>
+            </div>
+            <div class="button">
+                <button type="submit">Gửi thông tin</button>
+            </div>
+           
+
+        </form>
+    </div>
+    <div class="table">
+        <table>
+            <thead>
+            <tr>
+                <th rowspan="2">STT</th>
+                <th colspan="3">Thông tin cá nhân</th>
+                <th colspan="2"> Thông tin tài khoản</th>
+            </tr>
+            <tr>
+                <th>Họ và tên</th>
+                <th>Năm sinh</th>
+                <th>Giới tính</th>
+                <th>Tài khoản</th>
+                <th>Mật khẩu</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Nguyễn Văn A</td>
+                    <td>2000</td>
+                    <td>Nam</td>
+                    <td>abcd</td>
+                    <td>123456</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Nguyễn văn B</td>
+                    <td>2002</td>
+                    <td>Nam</td>
+                    <td>abcd</td>
+                    <td>123456</td>
+                </tr>
+            </tbody>
+            
+        </table>
+    </div>
 
     <!-- <iframe id="test-iframe" src="https://www.youtube.com/embed/AktzL2qZ4ns?si=yypM5ZQbNSpd1mB1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
     <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7933.873597313862!2d105.74065163598257!3d21.00548084525244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31345354c762a677%3A0xd36e5b00644562bf!2sTo%C3%A0%20S401%20Vinhomes%20Smart%20City!5e0!3m2!1svi!2s!4v1698422603711!5m2!1svi!2s" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
@@ -49,7 +124,7 @@
             <source src="./assets/media/audio1.mp3" type="audio/mpeg">
             Your browser does not support the audio element.
         </audio>
-        <div class="box">
+        <div id="box__project" class="box">
             <div class="box__project">
                 <div class="box__project__content">
                     <img class="box__image" src="./assets/img/anh-4.jpg" alt="">
@@ -113,6 +188,5 @@
             </div>
         </div>
     </div>
-
 </body>
 </html>
