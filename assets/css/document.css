@@ -278,9 +278,58 @@ table{
 }
 tr, th, td{
     border: 1px solid #333;
-
+}
+.towards{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+.towards__text{
+    width: 60%;
+}
+.towards__text__content{
+    display: flex;
+}
+.towards__content{
+    display: flex;
+    max-width: 50%;
+    width: 100%;
 }
 
+.towards__item{
+    width: 50%;
+}
+
+.towards__item h2{
+    width: 100%;
+}
+.towards__video{
+    max-width: 40%;
+}
+.development_field{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.development_field_content{
+    width: 70%;
+}
+.development_field_image{
+    display: flex;
+}
+.development_field_image_child{
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.development_field_image_child a p{
+    position: absolute;
+}
+/* .development_field_image_child :hover{
+    position: absolute; 
+    top:20px;
+} */
 @media (max-width: 576px) {
 .box__project{width: 100%;}   
 .block__image{width: 100%;} 
