@@ -1,20 +1,27 @@
+:root{
+    --color-primary: #0c88a2;
+}
+
 *{
     padding: 0;
     margin: 0;
+}
+body{
+    font-family: 'Manrope', sans-serif;
 }
 img{
     max-width: 100%;
 }
 h2{
-    margin-top: 50px;
     text-align: center;
-    color: #0c88a2;
+    color: var(--color-primary);
     font-size: 50px;
 }
 a{
     color: black;
     text-decoration: none;
 }
+iframe{width: 100%;}
 h3{
     color: #F2BD23;
     font-size: 50px;
@@ -32,7 +39,7 @@ ul{
     max-width: 100%;
     margin: auto;
     font-size: 20px;
-    background-color: #0c88a2;
+    background-color: var(--color-primary);
 }
 .title{
     display: flex;
@@ -270,6 +277,7 @@ button{
     justify-content: center;
     width: 100%;
     padding: 20px;
+    box-sizing: border-box;
 }
 table{
     width: 70%;
@@ -280,56 +288,80 @@ tr, th, td{
     border: 1px solid #333;
 }
 .towards{
+    margin-top: 50px;
     display: flex;
     width: 100%;
     justify-content: center;
+    align-items: center;
 }
 .towards__text{
     width: 60%;
 }
+.towards__video{
+    width: 40%;
+}
 .towards__text__content{
     display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+}
+.towards__item__child{
+    font-size: 40px;
+    color: var(--color-primary);
+    font-weight: 700;
 }
 .towards__content{
-    display: flex;
     max-width: 50%;
     width: 100%;
+    text-align: center;
+    margin: 15px 0;
 }
 
-.towards__item{
-    width: 50%;
+.towards__item p{
+    font-size: 20px;
 }
 
 .towards__item h2{
     width: 100%;
 }
-.towards__video{
-    max-width: 40%;
-}
 .development_field{
+    margin-top: 50px;
     width: 100%;
     display: flex;
     justify-content: center;
     text-align: center;
+    margin-bottom: 50px;
 }
 .development_field_content{
     width: 70%;
 }
 .development_field_image{
     display: flex;
+    margin-top: 30px;
 }
 .development_field_image_child{
     width: 25%;
     padding: 10px;
     box-sizing: border-box;
 }
+.development_field_image_child a{
+    position: relative;
+}
 .development_field_image_child a p{
     position: absolute;
+    width: 100%;
+    bottom: 20px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
 }
-/* .development_field_image_child :hover{
-    position: absolute; 
-    top:20px;
-} */
+.development_field_image_child img{
+    transition: all 0.3s;
+}
+.development_field_image_child:hover img{
+    margin-top: -20px;
+}
+
 @media (max-width: 576px) {
 .box__project{width: 100%;}   
 .block__image{width: 100%;} 
