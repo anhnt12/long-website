@@ -103,7 +103,7 @@
 
 
 
-.Typical-projects{
+.typical-projects{
     display: flex;
     flex-direction: column;
     max-width: 100%;
@@ -112,7 +112,7 @@
     align-items: center;
     justify-content: center;
 }
-.Typical-projects h2{
+.typical-projects h2{
     color: var(--secondary-color);
 }
 .document{
@@ -123,7 +123,7 @@
     display: flex;
     overflow: hidden;
     color: white;
-    max-width: 80%;
+    width: 80%;
     flex-wrap: wrap;
 }
 .box a{
@@ -173,7 +173,7 @@
 
 .blog {   
     display: flex;
-    max-width: 80%;
+    width: 80%;
     align-items: center;
     overflow: hidden;
     margin: 20px auto;
@@ -317,7 +317,7 @@ tr, th, td{
     text-align: center;
 }
 .development_field_content{
-    width: 70%;
+    width: 80%;
 }
 .development_field_content h2{
     color: var(--main-color);
