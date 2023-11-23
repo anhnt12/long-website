@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/document.css">
+    <link rel="stylesheet" href="assets/libs/bootstrap-5.3.2-dist/css/bootstrap.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,maximum-scale=1.0, user-scalable=yes">
 </head>
 <body>
@@ -35,217 +36,155 @@
             </li>
         </ul>
     </div>
-     <div class="form">
-        <form action="">
-            <div class="information">
-                <div class="information__firt"><input type="text" name="name" id="name" placeholder="   Họ và tên"></div>
-                <div class="information__firt"><input type="tel" name="phone" id="phone" placeholder="   số điện thoại"></div>
+    
+    <div class="typical_projects">
+       <div class="container">
+            <div class="block__title text_color_1">Dự án tiêu biểu</div>
+            <div class="block__description document">
+                <p>Với phương châm đổi mới, sáng tạo, sẵn sàng đón nhận thách thức, WeUp đang từng bước tiến gần đến mục tiêu giúp 1 triệu gia đình Việt Nam Phát triển & Hạnh phúc thông qua các dự án.</p>
             </div>
-            
-            <div class="information">
-                <div class="information__second">
-                <select name="gender" id="gender">
-                    <option value="">Giới tính</option>
-                    <option value="">Nam</option>
-                    <option value="">Nữ</option>
-                    <option value="">Khác</option>
-                </select>
-                </div>
-                <div class="information__second"><input type="date" name="date" id="date" placeholder="Năm sinh"></div>
-            </div>
-            
-            <div class="topic"> 
-                <p>Chủ đề quan tâm</p>
-                <input type="checkbox" name="topic" id="topic">
-                <label for="topic">Lập trình</label>
-                <input type="checkbox" name="topic" id="topic">
-                <label for="topic">Công nghệ</label>
-                <input type="checkbox" name="topic" id="topic">
-                <label for="topic">Đời sống</label>
-            </div>
-            <div class="note">
-                <textarea name="note" id="note" cols="30" rows="10" placeholder="   Ghi chú"></textarea>
-            </div>
-            <div class="button">
-                <button type="submit">Gửi thông tin</button>
-            </div>
-           
-
-        </form>
-    </div>
-    <div class="table">
-        <table>
-            <thead>
-            <tr>
-                <th rowspan="2">STT</th>
-                <th colspan="3">Thông tin cá nhân</th>
-                <th colspan="2"> Thông tin tài khoản</th>
-            </tr>
-            <tr>
-                <th>Họ và tên</th>
-                <th>Năm sinh</th>
-                <th>Giới tính</th>
-                <th>Tài khoản</th>
-                <th>Mật khẩu</th>
-            </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>1</td>
-                    <td>Nguyễn Văn A</td>
-                    <td>2000</td>
-                    <td>Nam</td>
-                    <td>abcd</td>
-                    <td>123456</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>Nguyễn văn B</td>
-                    <td>2002</td>
-                    <td>Nam</td>
-                    <td>abcd</td>
-                    <td>123456</td>
-                </tr>
-            </tbody>
-            
-        </table>
-    </div>
-    <div class="Typical-projects">
-        <div class="block__title"><h2>Dự án tiêu biểu</h2></div>
-        <div class="block__description document">
-            <p>Với phương châm đổi mới, sáng tạo, sẵn sàng đón nhận thách thức, WeUp đang từng bước tiến gần đến mục tiêu giúp 1 triệu gia đình Việt Nam Phát triển & Hạnh phúc thông qua các dự án.</p>
-        </div>
-        <div id="box__project" class="block__content box">
-                <div class="box__project">
-                    <div class="box__project__content">
-                        <img class="box__image" src="./assets/img/anh-4.jpg" alt="">
-                        <div class="box__text">
-                            <a class="box__link" href=""><h4>WeUp Platform</h4></a>
-                            <p>MXH giáo dục chuyển hoá Thân - Tâm MXH giáo dục chuyển hoá Thân - Tâm MXH giáo dục chuyển hoá Thân - Tâm - Tuệ đầu tiên tại Việt Nam. Nền tảng kết nối cá nhân với các chuyên gia hàng đầu trong lĩnh vực chữa lành thân tâm.</p>
-                            <a href="">xem thêm</a>
+            <div class="row">
+                    <div class="col-12 col-lg-4 mb-3">
+                        <div class="box__project__content">
+                            <img class="box__image" src="./assets/img/anh-4.jpg" alt="">
+                            <div class="box__text">
+                                <a class="box__link text-white" href=""><h4>WeUp Platform</h4></a>
+                                <p class="text-white">MXH giáo dục chuyển hoá Thân - Tâm MXH giáo dục chuyển hoá Thân - Tâm MXH giáo dục chuyển hoá Thân - Tâm - Tuệ đầu tiên tại Việt Nam. Nền tảng kết nối cá nhân với các chuyên gia hàng đầu trong lĩnh vực chữa lành thân tâm.</p>
+                                <a href="" class="text-white">xem thêm</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="box__project">
-                    <div class="box__project__content">
-                        <img class="box__image" src="./assets/img/anh-5.jpg" alt="">
-                        <div class="box__text">
-                            <a class="box__link" href=""><h4>Yoga Cho Mẹ Bầu</h4></a>
-                            <p>Chăm sóc sức khoẻ toàn diện về thể chất và tinh thần cho mẹ và bé trong suốt hành trình mang thai đến khi bé chào đời. Vì một thai kỳ bé khoẻ, mẹ vui.</p>
-                            <a href="">xem thêm</a>
+                    <div class="col-12 col-lg-4 mb-3">
+                        <div class="box__project__content">
+                            <img class="box__image" src="./assets/img/anh-5.jpg" alt="">
+                            <div class="box__text">
+                                <a class="box__link text-white" href=""><h4>Yoga Cho Mẹ Bầu</h4></a>
+                                <p class="text-white">Chăm sóc sức khoẻ toàn diện về thể chất và tinh thần cho mẹ và bé trong suốt hành trình mang thai đến khi bé chào đời. Vì một thai kỳ bé khoẻ, mẹ vui.</p>
+                                <a href="" class="text-white">xem thêm</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="box__project">
-                    <div class="box__project__content">
-                        <img class="box__image" src="./assets/img/anh-6.jpg" alt="">
-                        <div class="box__text">
-                            <a class="box__link" href=""><h4>App Mobile 4U</h4></a>
-                            <p>"Positive affirmations - Ứng dụng giúp giải tỏa căng thẳng, cải thiện tinh thần & duy trì năng lượng tích cực mỗi ngày thông qua những câu nói tạo động lực".</p>
-                            <a href="">xem thêm</a>
+                    <div class="col-12 col-lg-4 mb-3">
+                        <div class="box__project__content">
+                            <img class="box__image" src="./assets/img/anh-6.jpg" alt="">
+                            <div class="box__text">
+                                <a class="box__link text-white" href=""><h4>App Mobile 4U</h4></a>
+                                <p class="text-white">"Positive affirmations - Ứng dụng giúp giải tỏa căng thẳng, cải thiện tinh thần & duy trì năng lượng tích cực mỗi ngày thông qua những câu nói tạo động lực".</p>
+                                <a href="" class="text-white">xem thêm</a>
+                            </div>
                         </div>
                     </div>
-                </div>
+            </div>
         </div>
         
         
     </div>
-    <div class="news-and-events">
-        <div class="block__title">
-            <h2>Hoạt động</h2>
-        </div>
-        <div class="block__content">
-                <div class="blog">
-                <div class="blog__image">
-                    <a class="image" href=""><img src="./assets/img/anh-1.jpg" alt=""></a>
-                </div> 
-                <div class="blog__link">
-                        <a class="text" href="#"><b>Ký Kết Hợp Tác Giữa WeUp Và Oneness Conscious</b></a>
-                        <p>10/10/2023</p>
+    <div class="news_and_events">
+        <div class="container">
+            <div class="block__title text_color_2">Tin tức & Sự Kiện</div>
+            <div class="row">
+                <div class="col-12 mb-3">
+                    <div class="blog">
+                        <div class="blog__image">
+                            <a class="image" href=""><img src="./assets/img/anh-1.jpg" alt=""></a>
+                        </div> 
+                        <div class="blog__link">
+                                <a class="text" href="#"><b>Ký Kết Hợp Tác Giữa WeUp Và Oneness Conscious</b></a>
+                                <p>10/10/2023</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="blog ">
-                <div class="blog__image">
-                    <a class="image" href=""><img src="./assets/img/anh-2.jpg" alt=""></a>
-                </div> 
-                <div class="blog__link">
-                        <a class="text" href="#"><b>CTCP Truyền Thông & Công Nghệ WeUp Đổi Tên Thành CTCP Tập Đoàn WeUp</b></a> 
-                        <p>12/09/2023</p>
+                <div class="col-12 mb-3">
+                    <div class="blog ">
+                        <div class="blog__image">
+                            <a class="image" href=""><img src="./assets/img/anh-2.jpg" alt=""></a>
+                        </div> 
+                        <div class="blog__link">
+                                <a class="text" href="#"><b>CTCP Truyền Thông & Công Nghệ WeUp Đổi Tên Thành CTCP Tập Đoàn WeUp</b></a> 
+                                <p>12/09/2023</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="blog">
-                <div class="blog__image">
-                    <a class="image" href=""><img src="./assets/img/anh-3.jpg" alt=""></a>
-                </div> 
-                <div class="blog__link">
-                        <a class="text" href="#"><b>VTV2: WeUp Ra Mắt Giải Pháp Công Nghệ Giáo Dục Và Chăm Sóc Sức Khỏe Tinh Thần</b></a>
-                        <p>31/08/2023</p>
+                <div class="col-12 mb-3">
+                    <div class="blog">
+                        <div class="blog__image">
+                            <a class="image" href=""><img src="./assets/img/anh-3.jpg" alt=""></a>
+                        </div> 
+                        <div class="blog__link">
+                                <a class="text" href="#"><b>VTV2: WeUp Ra Mắt Giải Pháp Công Nghệ Giáo Dục Và Chăm Sóc Sức Khỏe Tinh Thần</b></a>
+                                <p>31/08/2023</p>
+                        </div>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </div>
     <div class="towards">
-        <div class="towards__text">
-            <div class="block__title"><h2>WeUp Hướng Tới</h2></div>
-            <div class="towards__text__content">
-                <div class="towards__content">
-                    <div class="towards__item">
-                        <div><img src="assets/img/ten_lua.svg" alt=""></div>
-                        <p>Công Nghệ Giáo Dục Vượt Trội </p>
-                    </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-7">
+                        <div class="block__title text_color_2">WeUp Hướng Tới</div>
+                        <div class="towards__text__content">
+                            <div class="towards__content">
+                                <div class="towards__item">
+                                    <div><img src="assets/img/ten_lua.svg" alt=""></div>
+                                    <p>Công Nghệ Giáo Dục Vượt Trội </p>
+                                </div>
+                            </div>
+                            <div class="towards__content">
+                                <div class="towards__item">
+                                    <div class="towards__item__child">1.000+</div>
+                                    <p>Đối Tác Đồng Hành</p>
+                                </div>
+                            </div>
+                            <div class="towards__content">
+                                <div class="towards__item">
+                                    <div class="towards__item__child">1.000.000</div>
+                                    <p>Gia Đình Phát Triển & Hạnh Phúc</p>
+                                </div>
+                            </div>
+                            <div class="towards__content">
+                                <div class="towards__item">
+                                    <div class="towards__item__child">30%</div>
+                                    <p>Cam Kết Tái Đầu Tư Cho Cộng Đồng</p>
+                                </div>
+                            </div>
+                        </div>
                 </div>
-                <div class="towards__content">
-                    <div class="towards__item">
-                        <div class="towards__item__child">1.000+</div>
-                        <p>Đối Tác Đồng Hành</p>
-                    </div>
-                </div>
-                <div class="towards__content">
-                    <div class="towards__item">
-                        <div class="towards__item__child">1.000.000</div>
-                        <p>Gia Đình Phát Triển & Hạnh Phúc</p>
-                    </div>
-                </div>
-                <div class="towards__content">
-                    <div class="towards__item">
-                        <div class="towards__item__child">30%</div>
-                        <p>Cam Kết Tái Đầu Tư Cho Cộng Đồng</p>
-                    </div>
+                <div class="col-12 col-lg-5">
+                     <iframe class="iframe" width="560" height="315" src="https://www.youtube.com/embed/VX7hJNZaHXQ?si=PbpC5S8hENL6il-u" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
         </div>
-        <div class="towards__video">
-            <iframe src="https://www.youtube.com/embed/VX7hJNZaHXQ?si=2y8jk76NVP9HA38r" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-        </div>
     </div>
     <div class="development_field">
-        <div class="development_field_content">
-                <div class="block__title">
-                    <h2>Lĩnh Vực Phát Triển</h2>
-                </div><br>
+        <div class="container">
+            <div class="development_field_content">
+                <div class="block__title text_color_2">Lĩnh Vực Phát Triển</div>
                 <div class="block__description">
                     <p>WeUp tiên phong kiến tạo một Việt Nam Phát triển & Hạnh phúc bằng cách cộng hưởng lợi thế của các lĩnh vực Công nghệ, Giáo dục, Môi trường, Cộng đồng.</p>
                 </div>
-                <div class="block__content development_field_image">
-                    <div class="development_field_image_child">
+                <div class="row">
+                    <div class="col-6 col-lg-3 my-3 development_field_image">
                         <a href="">
                             <img src="assets/img/moi_truong.jpg" alt="">
                             <p>Sống Xanh</p>
                         </a>
                     </div>
-                    <div class="development_field_image_child">
+                    <div class="col-6 col-lg-3 my-3 development_field_image">
                         <a href="">
                             <img src="assets/img/cong_dong.jpg" alt="">
                             <p>Cộng Đồng</p>
                         </a>
                     </div>
-                    <div class="development_field_image_child">
+                    <div class="col-6 col-lg-3 my-3 development_field_image">
                         <a href="">
                             <img src="assets/img/cong_nghe.jpg" alt="">
                             <p>công Nghệ</p>
                         </a>
                     </div>
-                    <div class="development_field_image_child">
+                    <div class="col-6 col-lg-3 my-3 development_field_image">
                         <a href="">
                             <img src="assets/img/giao_duc.jpg" alt="">
                             <p>Giáo Dục</p>
@@ -253,7 +192,9 @@
                     </div>
                 </div>
         </div>
+        </div>
     </div>
        
+    <script src="assets/libs/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
