@@ -183,30 +183,26 @@
     flex-direction: column;
     border-radius: 25px;
 }
-
+.towards_content{
+    align-items: center;
+}
 .towards__text__content{
-    display: flex;
-    flex-wrap: wrap;
     align-items: flex-end;
 }
-.towards__content{
-    max-width: 50%;
-    width: 100%;
-}
-
 .towards__item{
-    text-align: center;
     margin-bottom: 20px;
 }
+.towards__img{
+    padding-left: 70px;
+}
 .towards__item__child{
-    font-weight: 800;
-    font-size: 30px;
-    color: #0c88a2
+    font-weight: 750;
+    font-size: 40px;
+    color: var(--main-color)
 }
 .iframe{
     max-width: 100%;
     width: 100%;
-    height: auto;
 }
 
 
