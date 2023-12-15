@@ -11,10 +11,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,maximum-scale=1.0, user-scalable=yes">
 </head>
 <body>
+    <h1 id="title">Giải phương trình bậc 2</h1>
+    <input type="number" name="a" placeholder="Nhập vào a"/>
+    <input type="number" name="b" placeholder="Nhập vào b"/>
+    <input type="number" name="c" placeholder="Nhập vào c"/>
+    <button id="active">Bắt đầu giải</button>
+    <button onclick="reset()">Reset</button>
+    <div id="result"></div>
+
+
     <script src="./assets/libs/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
-    <!-- <script src="./assets/js/variable.js"></script> -->
-    <!-- <script src="./assets/js/condition_loop.js"></script> -->
-    <!-- <script src="./assets/js/func.js"></script> -->
-    <script src="./assets/js/notify.js"></script>
+    <script type="text/javascript">
+        function solveEquation() {
+            const result = document.getElementById('result');
+
+            const aElement = document.getElementsByName('a');
+            const a = aElement[0].value;
+            const bElement = document.getElementsByName('b');
+            const b = bElement[0].value;
+            const cElement = document.getElementsByName('c');
+            const c = cElement[0].value;
+
+            let content = '<br/>phương trình bậc 2 là: ' + a +'x2 + (' + b + ')x + ' + c;
+            const delta = b*b-4*a*c;
+            const x = -b/(2*a);
+            const x1 = (-b + Math.sqrt(delta)) / (2*a);
+            const x2 = (-b - Math.sqrt(delta)) / (2*a);
+            if (delta < 0){
+                content += '<br/>phương trình vô nghiệm';
+            } else if (delta == 0){
+                content += '<br/>phương trình có nghiệm kép: x1 = x2 = ' + x;
+            } else {
+                content += '<br/>'+'phương trình có 2 nghiệm riêng biệt: <br/>' + 'x1 = '+ x1 +'<br/>' + 'x2 = ' + x2;
+            }
+            result.innerHTML = content;
+        }
+
+        function reset() {
+            const element = document.getElementsByTagName('input');
+            for (item of element) {
+                item.value = ''
+            }
+            const result = document.getElementById('result');
+            result.innerHTML = ''
+
+        }
+        const btn = document.getElementById('active');
+        btn.onclick = function () {
+            solveEquation();
+        };
+        // title.setAttribute('anhnt', 'Tuấn Anh');
+        // const anhnt = title.getAttribute('anhnt');
+        // const name = document.getElementsByClassName('name');
+        // const inputEmail = document.getElementsByName('email');
+        // const input2 = document.getElementsByTagName('input');
+        // const titleQs = document.querySelector('.name');
+        // const titleQsa = document.querySelectorAll('.name');
+    </script>
+
 </body>
 </html>
