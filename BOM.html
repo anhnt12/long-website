@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Toidicode.com demo window</title>
+</head>
+
+<body>
+	<div id="result">Click vào button để xem kết quả</div>
+
+	<button type="button" onclick="test()">Test</button>
+	<button type="button" onclick="stop()">Stop</button>
+	<!-- <button type="button" onclick="openW()">Mở cửa sổ</button> -->
+	<!-- <button type="button" onclick="moveW()">Di chuyển cửa sổ</button> -->
+	<script type="text/javascript">
+		// Datetime
+		const a = new Date(2021, 3, 23);
+		const b = new Date(2024, 0, 12, 12, 56, 14);
+
+		// String
+		const sa = 'Nguyễn Tuấn Anh';
+
+		// Number
+		const na = 12.129387981273;
+		
+		var data = '';
+		// Math.cell(a) == a.toFixed(0)
+		data += 'E = ' + Math.ceil(132.1238) + '<br>';
+		data += 'LN2 = ' + Math.LN2 + '<br>';
+		data += 'LN10 = ' + Math.LN10 + '<br>';
+		data += 'LOG2E = ' + Math.LOG2E + '<br>';
+		data += 'LOG10E = ' + Math.LOG10E + '<br>';
+		data += 'PI = ' + Math.PI + '<br>';
+		data += 'SQRT1_2 = ' + Math.SQRT1_2 + '<br>';
+		data += 'SQRT2 = ' + Math.SQRT2 + '<br>';
+		document.getElementById('result').innerHTML = data;
+
+		// let timeout = null;
+		let intervar = null;
+		function test() {
+			// timeout = setTimeout(function() {console.log('Chạy sau 2s');}, 5000);
+			intervar = setInterval(function() {console.log('Chạy sau 2s');}, 2000);
+
+		}
+
+		function stop() {
+			// clearTimeout(timeout);
+			clearInterval(intervar);
+			console.log('đã stop');
+		}
+
+		function openW() {
+            // window.location.href = "http://toidicode.com";
+            window.location.replace("http://toidicode.com");
+			// toidicode = window.open('', '', 'width=300,height=200');
+		}
+
+		function moveW() {
+			toidicode.moveTo(200,400);
+            toidicode.focus();
+		}
+	</script>
+</body>
+
+</html>

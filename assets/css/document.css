@@ -82,7 +82,7 @@ ul{
 .title__child:hover>a{
     background-color: white;
 }
-.title__child:hover .item{
+.title__child .item.active{
     visibility: visible;
     opacity: 1;
     top: 100%;

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Storage</title>
+    <link rel="stylesheet" href="./assets/css/document.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,maximum-scale=1.0, user-scalable=yes">
+</head>
+<body>
+    <h1>Xin chào</h1>
+    <button onclick="sendajax()">Test ajax</button>
+    <table id="result" style="width: 100%;">
+        <thead>
+            <tr>
+                <th>STT</th>
+                <th>Avatar</th>
+                <th>Họ tên</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+    </table>
+    <script type="text/javascript">
+        function sendajax() {
+            //Khoi tao doi tuong
+            var xhttp = new XMLHttpRequest() || ActiveXObject();
+            //cau hinh request
+            xhttp.open('GET','https://5f7aebe34ebc4100161cb48c.mockapi.io/api/Users',true);
+            //gui request
+            xhttp.send();
+            //Bat su kien thay doi trang thai cuar request
+            xhttp.onreadystatechange = function () {
+                //Kiem tra neu nhu da gui request thanh cong
+                if (this.readyState == 4 && this.status == 200) {
+                    //In ra data nhan duoc
+                    addData(this.responseText)
+                }
+            }
+        }
+
+        function addData(data) {
+            data = JSON.parse(data)
+            let html = '';
+            let d = 0;
+            let element = {};
+            for (let i = 0; i < data.length; i++ ) {
+                element = data[i];
+                d++;
+                html += `<tr>
+                        <td>`+ d.toString() +`</td>
+                        <td><img src="`+ element.avatar +`" style="width: 60px; height: auto;"></td>
+                        <td>`+ element.name +`</td>
+                        <td>`+ element.email +`</td>
+                    </tr>`;
+            }
+            // data.forEach(element => {
+                
+            // });
+            document.getElementById('tbody').innerHTML = html;
+        }
+
+
+        // const a = localStorage.name;
+        // if (!a) {
+        //     console.log('chưa tồn tại a')
+        //     localStorage.name = 'abc'
+        // } else {
+        //     console.log('đã tồn tại a')
+        // }
+        // localStorage.removeItem('name');
+        // const b = localStorage.getItem('name');
+        // localStorage.clear()
+        // Tương tự với sessionStorage
+    </script>
+</body>
+</html>

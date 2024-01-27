@@ -39,11 +39,15 @@
             </li>
         </ul>
     </div>
-    <button onclick="alert('okokok');">Xin chào</button>
+    <button onclick="showInfo(this)" > button1</button>
+    <button onclick="showInfo(this)" > button2</button>
+    <button onclick="showInfo(this)" > button3</button>
     <div class="block typical-projects">
         <div class="container">
-            <h3 class="block__title">Dự án tiêu biểu</h3>
-            <div class="block__description text-white">
+            <h3 id="title-1" class="block__title">Dự án tiêu biểu</h3>
+            <h3 id="title-2" class="block__title">Dự án tiêu biểu 2</h3>
+            <h3 id="title-3" class="block__title">Dự án tiêu biểu 3</h3>
+            <div class="block__description text-white" onclick="changeColor()"> 
                 <p>Với phương châm đổi mới, sáng tạo, sẵn sàng đón nhận thách thức, WeUp đang từng bước tiến gần đến mục tiêu giúp 1 triệu gia đình Việt Nam Phát triển & Hạnh phúc thông qua các dự án.</p>
             </div>
             <div class="block__content">
@@ -186,10 +190,14 @@
             </div>
         </div>
     </div>
+    <button onclick="toTop()">Lên</button>
 
     <script src="./assets/libs/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
     <!-- <script src="./assets/js/variable.js"></script> -->
     <!-- <script src="./assets/js/condition_loop.js"></script> -->
     <script src="./assets/js/func.js"></script>
+    <script src="./assets/js/style.js"></script>
+    <script src="./assets/js/event.js"></script>
+    <script src="./assets/js/BOM.js"></script>
 </body>
 </html>

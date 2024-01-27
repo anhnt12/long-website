@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>toidicode.com</title>
+	<link rel="stylesheet" href="">
+</head>
+
+<!-- onclick="getActive()" -->
+<body >
+	<!-- <div>Click vào <b>button</b> hoặc <b>input</b> để xem kết quả</div>
+	<input type="text" value="Toidicode.com">
+	<br/>
+	<button>button</button>
+	 <p id='result'></p> -->
+
+    <!-- State -->
+    <p>click vào <em>GET</em> để xem kết quả</p>
+	<button onclick="getA()" >GET</button>
+	<p id='result'></p>
+	<script src="./assets/js/event.js"></script>
+
+    <p>click vào <em>GET</em> để xem kết quả</p>
+	<img  alt="toidicode">
+	<img  alt="toidicode">
+	<img  alt="toidicode">
+	<img  alt="toidicode">
+	<br>
+	<button onclick="getA()" >GET</button>
+	<p id='result'></p>
+	<script type="text/javascript">
+		function getA()
+		{
+			var length = document.images.length;
+			document.getElementById('result').innerText = 'Số thẻ img : ' + length;
+		}
+	</script>
+</body>
+
+</html>

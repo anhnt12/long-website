@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="./assets/libs/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/document.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no,maximum-scale=1.0, user-scalable=yes">
+</head>
+<body>
+    <div class="menu">
+        <ul class="title">
+            <li class="title__child">
+                <a href="#">Di động</a>
+                <div class="item">
+                    <a href="">Iphone</a>
+                    <a href="">SamSung</a>
+                    <a href="">Oppo</a>
+                </div>
+            </li>
+            <li class="title__child">
+                <a href="#">Lap top</a>
+                <div class="item">
+                    <a href="">Lenovo</a>
+                    <a href="">Dell</a>
+                    <a href="">Hp</a>
+                </div>
+            </li>
+            <li class="title__child">
+                <a href="#">Phụ kiện</a>
+                <div class="item">
+                    <a href="">Tai nghe</a>
+                    <a href="">Sạc</a>    
+                    <a href="">Bàn phím</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="block typical-projects">
+        <div class="container">
+            <h3 id="title-1" class="block__title">Dự án tiêu biểu</h3>
+            <h3 id="title-2" class="block__title">Dự án tiêu biểu 2</h3>
+            <h3 id="title-3" class="block__title">Dự án tiêu biểu 3</h3>
+            <div class="block__description text-white" onclick="changeColor()"> 
+                <p>Với phương châm đổi mới, sáng tạo, sẵn sàng đón nhận thách thức, WeUp đang từng bước tiến gần đến mục tiêu giúp 1 triệu gia đình Việt Nam Phát triển & Hạnh phúc thông qua các dự án.</p>
+            </div>
+            <div class="block__content">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="box__project__content">
+                            <img class="box__image" src="./assets/img/anh-4.jpg" alt="">
+                            <div class="box__text">
+                                <a class="box__link text-white" href=""><h4>WeUp Platform</h4></a>
+                                <p class="text-white">MXH giáo dục chuyển hoá Thân - Tâm MXH giáo dục chuyển hoá Thân - Tâm MXH giáo dục chuyển hoá Thân - Tâm - Tuệ đầu tiên tại Việt Nam. Nền tảng kết nối cá nhân với các chuyên gia hàng đầu trong lĩnh vực chữa lành thân tâm.</p>
+                                <a href="" class="text-white">xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="box__project__content">
+                            <img class="box__image" src="./assets/img/anh-5.jpg" alt="">
+                            <div class="box__text">
+                                <a class="box__link text-white" href=""><h4>Yoga Cho Mẹ Bầu</h4></a>
+                                <p class="text-white">Chăm sóc sức khoẻ toàn diện về thể chất và tinh thần cho mẹ và bé trong suốt hành trình mang thai đến khi bé chào đời. Vì một thai kỳ bé khoẻ, mẹ vui.</p>
+                                <a href="" class="text-white">xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4 mb-3">
+                        <div class="box__project__content">
+                            <img class="box__image" src="./assets/img/anh-6.jpg" alt="">
+                            <div class="box__text">
+                                <a class="box__link text-white" href=""><h4>App Mobile 4U</h4></a>
+                                <p class="text-white">"Positive affirmations - Ứng dụng giúp giải tỏa căng thẳng, cải thiện tinh thần & duy trì năng lượng tích cực mỗi ngày thông qua những câu nói tạo động lực".</p>
+                                <a href="" class="text-white">xem thêm</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/libs/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript">
+        //chọn tất cả các thẻ li (con của thẻ ul có id= menu)
+        var li = document.querySelectorAll('div.menu>ul li.title__child');
+        //Duyệt tất cả các phần tử li đó
+        for(i=0; i < li.length; i++){
+            //và áp sự kiện click lên từng thẻ li
+            li[i].addEventListener('click', function() {
+                //chọn tất cả các thẻ ul con của thẻ li
+                var ulc = document.querySelectorAll('div.menu>ul li .item');
+                //Tiến hàn duyệt từng thẻ ul đó
+                for(j=0; j< ulc.length; j++){
+                    //css cho display = none
+                    ulc[j].classList.remove('active');
+                }
+                //chọn thẻ ul con của thẻ li vừa click
+                //this ở đây chính là đối tượng li vừa click
+                var child = this.getElementsByClassName('item');
+                //nếu như có tồn tại ul con của li vừa click
+                if(child.length >=1){
+                    //tiến hành css display=block
+                    child[0].classList.add('active');
+                }
+            });
+        }
+    </script>
+
+    <script src="./assets/js/BOM.js"></script>
+</body>
+</html>
